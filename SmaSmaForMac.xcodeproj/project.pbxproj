@@ -13,6 +13,9 @@
 		08A4876B1E1255A8004FFCB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A487691E1255A8004FFCB4 /* Main.storyboard */; };
 		08A487761E1255A8004FFCB4 /* SmaSmaForMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A487751E1255A8004FFCB4 /* SmaSmaForMacTests.swift */; };
 		08A487811E1255A8004FFCB4 /* SmaSmaForMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A487801E1255A8004FFCB4 /* SmaSmaForMacUITests.swift */; };
+		08A487C11E1257DA004FFCB4 /* BleFormatterForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A487C01E1257DA004FFCB4 /* BleFormatterForMac.framework */; };
+		08A487C21E1257DA004FFCB4 /* BleFormatterForMac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08A487C01E1257DA004FFCB4 /* BleFormatterForMac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		08ACBA721E262D8C00EA1C31 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ACBA711E262D8C00EA1C31 /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		08A487921E1255ED004FFCB4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				08A487C21E1257DA004FFCB4 /* BleFormatterForMac.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		08A487601E1255A8004FFCB4 /* SmaSmaForMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmaSmaForMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08A487631E1255A8004FFCB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +62,8 @@
 		08A4877C1E1255A8004FFCB4 /* SmaSmaForMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmaSmaForMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08A487801E1255A8004FFCB4 /* SmaSmaForMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmaSmaForMacUITests.swift; sourceTree = "<group>"; };
 		08A487821E1255A8004FFCB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08A487C01E1257DA004FFCB4 /* BleFormatterForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BleFormatterForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08ACBA711E262D8C00EA1C31 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A487C11E1257DA004FFCB4 /* BleFormatterForMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +95,7 @@
 		08A487571E1255A8004FFCB4 = {
 			isa = PBXGroup;
 			children = (
+				08A487C01E1257DA004FFCB4 /* BleFormatterForMac.framework */,
 				08A487621E1255A8004FFCB4 /* SmaSmaForMac */,
 				08A487741E1255A8004FFCB4 /* SmaSmaForMacTests */,
 				08A4877F1E1255A8004FFCB4 /* SmaSmaForMacUITests */,
@@ -100,6 +121,7 @@
 				08A487671E1255A8004FFCB4 /* Assets.xcassets */,
 				08A487691E1255A8004FFCB4 /* Main.storyboard */,
 				08A4876C1E1255A8004FFCB4 /* Info.plist */,
+				08ACBA711E262D8C00EA1C31 /* Request.swift */,
 			);
 			path = SmaSmaForMac;
 			sourceTree = "<group>";
@@ -132,6 +154,7 @@
 				08A4875C1E1255A8004FFCB4 /* Sources */,
 				08A4875D1E1255A8004FFCB4 /* Frameworks */,
 				08A4875E1E1255A8004FFCB4 /* Resources */,
+				08A487921E1255ED004FFCB4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08A487661E1255A8004FFCB4 /* ViewController.swift in Sources */,
+				08ACBA721E262D8C00EA1C31 /* Request.swift in Sources */,
 				08A487641E1255A8004FFCB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +529,7 @@
 				08A487871E1255A8004FFCB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08A487881E1255A8004FFCB4 /* Build configuration list for PBXNativeTarget "SmaSmaForMacTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +538,7 @@
 				08A4878A1E1255A8004FFCB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08A4878B1E1255A8004FFCB4 /* Build configuration list for PBXNativeTarget "SmaSmaForMacUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +547,7 @@
 				08A4878D1E1255A8004FFCB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
